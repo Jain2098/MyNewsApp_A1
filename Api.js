@@ -1,7 +1,10 @@
 import axios from 'axios';
+import ApiKey from './ApiKey';
 
-const key = '538a3db968da90e1e8ea6704665e5da2'
-const url = 'https://gnews.io/api/v4'
+// Make sure you replace with your own API key
+// const ApiKey = '5304665e5da2'
+const key = ApiKey;
+const url = 'https://gnews.io/api/v4';
 
 const Api = async (endpoint = "/") => {
     let final_url = `${url}${endpoint}&apikey=${key}`;
